@@ -1,0 +1,22 @@
+[user]
+	name = Kamal Shrestha
+	email = kamal.shrestha@fusemachines.com
+[credential]
+	useremail = kamal.shrestha@fusemachines.com
+	email = kamal.shrestha@fusemachines.com
+[core]
+	editor = nano
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	a-c = !git add -A && git commit
+	s = !git status
+	co = !git checkout
+	cob = !git checkout -b
+	del = !git branch -d
+	br = ! git branch
+[commit]
+	template = /home/kamal/.gitmessage
