@@ -18,5 +18,6 @@
 	cob = !git checkout -b
 	del = !git branch -d
 	br = ! git branch
+	done = ! git psuh origin HEAD
 [commit]
 	template = /home/kamal/.gitmessage
